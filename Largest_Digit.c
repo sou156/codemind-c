@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main(){
-    int a,list,large=0;
-    scanf("%d",&a);
-    for(int i=1;i<=a;i++){
-        list=a%10;
-        if(list>large){
-            large=list;
+    int n,large=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        int k=n%10;
+        if(large<k){
+            large=k;
         }
-        a=a/10;
+         n=n/10;
     }
-    printf("%d",large);
+     printf("%d",large);
 }
