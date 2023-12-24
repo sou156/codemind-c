@@ -7,10 +7,11 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int sum=0;
-    for(int i=0;i<a;i+=2){
-        
-           sum=sum+arr[i];
-        
+    for(int i=0;i<a;i++){
+        if(i%2==0){
+            sum=sum+arr[i];
+        }
+       
     }
     printf("%d",sum);
 }
